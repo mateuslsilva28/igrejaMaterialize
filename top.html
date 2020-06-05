@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-servico{
+            height: auto;
+            width: 300px;
+            margin: 20px 0;
+        }
+        .container-nome-valor{
+            width: 100%;
+            background-color: #888686;
+            color: #fff;
+            height: 20px;
+            text-align: center;
+        }
+        .descricao-servico{
+            display: none;
+            background-color: white;
+            height: auto;
+            color: black;
+            text-align: left;
+        }
+        [type=radio]{
+            visibility: hidden;
+        }
+
+        [type=radio]:checked ~ .descricao-servico{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-servico">
+        <div class="container-nome-valor">
+            <input type="radio" id="servico1" name="radioServicos">
+            <label for="servico1" class="nome-servico">Nome Do Serviço</label>
+            <label for="servico1"  class="valor-servico">R$ 00,00</label>
+            <label class="descricao-servico descricao1">Descrição ...</label>
+        </div>
+    </div>
+    <div class="container-servico">
+        <div class="container-nome-valor">
+            <input type="radio" id="servico2" name="radioServicos">
+            <label for="servico2" class="nome-servico">Nome Do Serviço 1</label>
+            <label for="servico2" class="valor-servico">R$ 10,00</label>
+            <label class="descricao-servico descricao2">Descrição ...</label>
+        </div>
+    </div>
+</body>
+</html>

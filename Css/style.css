@@ -1,0 +1,352 @@
+/*Fontes*/
+@font-face{
+    font-family: "Pacifico";
+    src: url('../Fonts/Pacifico-Regular.ttf')
+}
+
+@font-face{
+    font-family: "Avenir";
+    src: url('../Fonts/AvenirLTStd-Medium.otf');
+}
+
+.letraDeMão{
+    font-family: "Pacifico"!important;
+}
+.Avenir{
+    font-family: "Avenir"!important;
+}
+
+/*Menu*/
+li:hover{background-color: none!important;}
+
+nav ul a{transition: all 0.4s linear!important;}
+
+nav ul a:hover{
+    background-color: rgba(0,0,0,0)!important;
+    color: orange!important;
+    transition: all 0.4s linear!important;
+}
+
+.mobile .material-icons{
+    transition: all 0.4s linear;
+}
+
+.mobile .material-icons:hover {
+    color: orange!important;
+    transition: all 0.4s linear;
+}
+
+.nav-wrapper {
+    height:70px!important;
+    padding: 0 15px!important;
+}
+
+.dropdown-content{
+    position: relative!important;
+    top:0px!important;
+}
+
+.dropdown-content li a{text-align:center;}
+
+.sidenav li a{transition: all 0.4s linear;}
+
+.sidenav li a:hover{
+    color:orange!important;
+    transition: all 0.4s linear
+}
+
+/*Slider
+.slider, .slides{
+    height:525px!important
+}*/
+.indicator-item{
+    position: relative!important;
+    top:-45px!important;
+    z-index:99!important
+}
+.indicator-item.active {background-color: orange!important;}
+
+.txtSliderCentro{
+    position: absolute!important;
+    top: 30%!important;
+}
+.txtSliderLeftCentro{
+    position: absolute!important;
+    top: 50%!important;
+    max-width:450px!important;
+}
+.txtSliderRight{
+    position: absolute!important;
+    left: 65%!important;
+    font-weight: bold!important;
+    width: 45%!important;
+    min-width:150px!important;
+}
+
+/*Zoom nas imagens*/
+.fotoIgreja, .card-image, .redesSociais{overflow: hidden;}
+.fotoIgreja img, .livros .card-image img, .redesSociais img{transition: all 0.4s linear;}
+
+.fotoIgreja:hover img, .livros .card-image:hover img, .redesSociais img:hover{    
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/*Sobre a igreja*/
+.aIgreja {
+    background-image: url('../Imagens/Background/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height:auto;
+    padding: 10px 10px 10px 0
+}
+
+.textIgreja{
+    font-size: 120%;
+    height:auto;
+    margin: 20px 0;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 30px 0 50px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Culto Ao Vivo*/
+.textAoVivo {width: 35%!important;}
+.videoAoVivo img {
+    width: 20%!important;
+    height:20%!important;
+    margin-left: 8%;
+}
+
+/*Sobre o Pastor*/
+.parallax-pastor {
+    display: flex!important;
+    align-items: flex-end!important;
+    justify-content: center!important;
+}
+
+.cxParallax{
+    width:50%!important;
+}
+
+.txtCxParallax{
+    padding: 10px 0 25px 0;
+}
+
+/*Nossas Igrejas*/
+.titleIgrejas {
+    font-weight: bolder;
+    font-size: 200%;
+    letter-spacing: 8px;
+    margin-left: 15%;
+}
+
+.nossasIgrejas{
+    width: 100%;
+    padding: 0 10%;
+}
+.fotoIgreja{
+    margin: 15px 0;
+    transition: all 0.4s linear;
+}
+.fotoIgreja img{
+    width: 100%;
+}
+
+.nomeIgreja {
+    width: 100%!important;
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+    color: #fff;    
+    cursor: default;
+    position: relative;
+}
+
+.fotoIgreja:hover{
+    filter: grayscale(0.1);
+    opacity: 0.8;
+    transition: all 0.4s linear;
+}
+
+/*Teologia*/
+.estudo {
+    width: 100%;
+    height: 600px;
+    background-image: url('../Imagens/Background/estudo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoEstudo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+}
+
+.textoEstudo p{
+    width: 65%;
+    text-align: center;
+}
+
+/*Card Eventos*/
+.livros {
+    width: 100%;
+    height: auto;
+    background-image: url('../Imagens/Eventos/congresso.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.card{
+    width:75%!important;
+}
+
+.card-action h3:hover, .card-action a:hover{
+    color:orange!important
+}
+
+.card-image img{
+    width:100%!important;
+}
+
+.activator{
+    cursor: pointer;
+}
+
+
+/*Galeria*/
+.areaDaFotoDestaque{
+    display: flex;
+    justify-content: center;
+}
+
+.fotoPrincipal {
+    width: 70%;
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.fotoPrincipal img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s linear;
+}
+
+.galeria{
+    margin-top: 50px;
+}
+.carousel{
+    margin-top: -80px;
+}
+
+.galeria .carousel img{
+    width: 150%!important;
+}
+
+.galeriaComMaterialBox img{
+    margin: 10px 0;
+}
+
+.prev{
+    left: 15%;
+}
+.next{
+    left: 82%;
+}
+
+.botoesSlider{
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+.titleGaleria{
+    font-weight: bolder;
+    font-size: 200%;
+    letter-spacing: 8px;
+    margin-left: 15%;
+}
+
+/*Rodapé*/
+.container-footer {
+    display: flex;
+    align-items: center;
+}
+
+.redesSociais{
+    padding-left: 10%!important;
+}
+
+/*Configurações Botões*/
+.btnWhite, .btnOrange, .btnOrange-FundoBranco {transition: all 0.4s linear;margin-top:20px}
+.btnWhite:hover{
+    transition: all 0.4s linear;
+    background: orange!important;
+}
+.btnOrange:hover{
+    transition: all 0.4s linear;
+    background: white!important;
+    color:black
+}
+.btnOrange-FundoBranco{margin-bottom:40px}
+.btnOrange-FundoBranco:hover{
+    transition: all 0.4s linear;
+    background: black!important;
+}
+
+.btnBlack{transition:all 0.4s linear!important;margin-bottom: 20px;}
+.btnBlack:hover{
+    transition: all 0.4s linear!important;
+    background-color: orange!important;
+}
+
+/*Media Queries*/
+@media (max-width:992px){
+    .displayCenter{flex-direction: column;}
+    .videoAoVivo img {margin: 40px 0 0 0;}
+    .textAoVivo{
+        width: 70%!important;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-card{display: flex;justify-content: center;}
+    .card{
+        width: 60%!important;
+    }
+}
+
+@media (max-width:600px){
+    .card{
+        width: 95%!important;
+    }
+}
